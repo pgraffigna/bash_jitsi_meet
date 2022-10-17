@@ -51,5 +51,5 @@ echo "org.jitsi.jicofo.auth.URL=XMPP:$(hostname -f)" |  sudo tee -a /etc/jitsi/j
 echo -e "\n${VERDE}creando usuario local ${FIN}"
 sudo prosodyctl register "${JITSI_ADMIN}" "${JITSI_HOSTNAME}" "${JITSI_PASSWORD}"
 
-echo -e "Reiniciando los servicios"
+echo -e "\n${VERDE}Reiniciando los servicios ${FIN}"
 sudo systemctl restart prosody.service jicofo.service jitsi-videobridge2.service
