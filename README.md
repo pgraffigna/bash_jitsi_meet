@@ -11,5 +11,5 @@ Repo con scripts para instalar un servicio jitsi-meet con validacion local + val
 
 ### to-do
 
-- [ ] validacion con ldap
+- [x] validacion con ldap
 
