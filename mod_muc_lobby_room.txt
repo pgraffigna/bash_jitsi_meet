@@ -1,0 +1,16 @@
+--- mod_muc_lobby_rooms.lua.sav	2021-03-08 23:05:13.000000000 +0100
++++ mod_muc_lobby_rooms.lua	2021-03-10 17:55:12.870587762 +0100
+@@ -376,6 +376,13 @@
+             end
+         end
+     end);
++
++    host_module:hook('muc-set-affiliation', function(event)
++        if jid_split(event.jid) ~= 'focus' and event.affiliation == 'owner' then
++	    handle_create_lobby(event);
++        end
++    end);
++
+ end);
+ 
+ -- Extract 'room' param from URL when session is created

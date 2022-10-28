@@ -57,3 +57,8 @@ sudo usermod -a -G sasl prosody
 
 echo -e "\n${VERDE}reiniciando el servicio prosody ${FIN}"
 sudo service prosody restart
+
+## puertos para jitsi
+# ufw allow 80,443,5349/tcp
+# ufw allow 3478,10000/udp
+
