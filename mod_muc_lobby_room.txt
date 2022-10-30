@@ -14,3 +14,22 @@
  end);
  
  -- Extract 'room' param from URL when session is created
+
+--[[ instalación del modulo
+
++ Descargar el modulo
+https://community.jitsi.org/uploads/short-url/faETNZE2TYuI6xwALgpUDfwJ7Yk.txt
+
++ copiar a la ruta
+cd /usr/share/jitsi-meet/prosody-plugins/
+
++ testeando el parche
+sudo patch --dry-run <~/mod_muc_lobby_room.txt
+
++ patchear
+sudo patch <~/mod_muc_lobby_room.txt
+
++ reiniciar el servicio prosody
+sudo systemctl restart prosody
+
+--]]
